@@ -1,0 +1,65 @@
+12:52:05  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+13:11:09  flight added: C:\Priyanshu\MISSION 5_F3
+13:11:09  LATRICS Geotag Pipeline v3.3   2026-10-08 13:11:09
+13:11:09  ================================================================
+MISSION 5_F3
+C:\Priyanshu\MISSION 5_F3
+13:11:09  STEP 1  Rover SBF: log__082.sbf (202 MB)
+13:11:09    ExtEvent: 1038 events   KML: 2613 points
+13:11:09    Writing RINEX (Mixed Observation + Navigation) ...
+13:11:10    RINEX nav: 189 ephemerides
+13:11:37    RINEX obs: 52274 epochs, 0.05 s interval, systems GERCJSI
+13:11:37    created: SEPT2630.26O  +  SEPT2630.26P
+13:11:37  STEP 2  Base: C:\Priyanshu\BASE DATA
+13:11:37    31832631.T04 -> RINEX 3.05 (obs + nav) ...
+13:11:37    > "C:\Program Files (x86)\Trimble\convertToRinex.exe" "C:\Priyanshu\BASE DATA\31832631.T04" -p "C:\Priyanshu\BASE DATA\_rinex_tmp" -v 3.05
+13:12:35      Scanning C:\Priyanshu\BASE DATA\31832631.T04...Complete!
+    Converting 31832631.T04...Success
+13:12:35    created: 31832631.26c, 31832631.26g, 31832631.26i, 31832631.26l, 31832631.26n, 31832631.26o, 31832631.26q
+13:12:35    base RINEX: 31832631.26o
+13:12:35    camera events : 2026-09-20 08:59:24.006660 -> 2026-09-20 09:32:25.259145 GPST  (14:29-15:02 IST)  n=1038
+13:12:35    base logging  : 2026-09-20 07:26:29 -> 2026-09-20 12:25:28 GPST  (12:56-17:55 IST)
+13:12:35  STEP 3  PPK
+13:12:35    Base: 31832631.26o   antenna up = 1.8714 m
+13:12:35    > "C:\Users\Latrics\Desktop\Automation_Code\Single_Code\_engine\rnx2rtkp_latrics.exe" -k "C:\Priyanshu\MISSION 5_F3\Rover\SEPT2630_ppk.conf" -o "C:\Priyanshu\MISSION 5_F3\Rover\SEPT2630_ppk.pos" "C:\Priyanshu\MISSION 5_F3\Rover\SEPT2630.26O" "C:\Priyanshu\BASE DATA\31832631.26o" "C:\Priyanshu\MISSION 5_F3\Rover\SEPT2630.26P" "C:\Priyanshu\BASE DATA\31832631.26c" "C:\Priyanshu\BASE DATA\31832631.26g" "C:\Priyanshu\BASE DATA\31832631.26i" "C:\Priyanshu\BASE DATA\31832631.26l" "C:\Priyanshu\BASE DATA\31832631.26n" "C:\Priyanshu\BASE DATA\31832631.26q"
+13:12:35    > "C:\Users\Latrics\Desktop\Automation_Code\Single_Code\_engine\rnx2rtkp_latrics.exe" -k "C:\Priyanshu\MISSION 5_F3\Rover\SEPT2630_ppk_check.conf" -o "C:\Priyanshu\MISSION 5_F3\Rover\SEPT2630_ppk_check.pos" "C:\Priyanshu\MISSION 5_F3\Rover\SEPT2630.26O" "C:\Priyanshu\BASE DATA\31832631.26o" "C:\Priyanshu\MISSION 5_F3\Rover\SEPT2630.26P" "C:\Priyanshu\BASE DATA\31832631.26c" "C:\Priyanshu\BASE DATA\31832631.26g" "C:\Priyanshu\BASE DATA\31832631.26i" "C:\Priyanshu\BASE DATA\31832631.26l" "C:\Priyanshu\BASE DATA\31832631.26n" "C:\Priyanshu\BASE DATA\31832631.26q"
+13:12:35    RTKLIB PPK running - main + check solution (several minutes)...
+13:14:43    main  solution: 52255 epochs, Fix 47.3 %
+13:14:43    check solution: 52255 epochs, Fix 47.1 %
+13:14:43    cross-check on 24598 common Fix epochs: median 0.000 m, 98% 0.002 m, >10 cm 0.1 %
+13:14:43    cross-check PASSED - main solution used
+13:14:43  STEP 4  Match camera events to PPK
+13:14:44    FLOAT=406, OK=632   (Fix 60.9 %)
+13:14:44    -> C:\Priyanshu\MISSION 5_F3\GEOTAG\SEPT2630_eventpos_matched.csv
+13:14:44  STEP 5  Geotag cameras
+13:14:44      A: writing geotagged copies -> C:\Priyanshu\MISSION 5_F3\A_Geotagged
+13:15:19      A: 1038 images, 1038 with position (632 Fix), 1038 JPG tagged [1:1]
+13:15:19      D: writing geotagged copies -> C:\Priyanshu\MISSION 5_F3\D_Geotagged
+13:15:54      D: 1038 images, 1038 with position (632 Fix), 1038 JPG tagged [1:1]
+13:15:54      S: writing geotagged copies -> C:\Priyanshu\MISSION 5_F3\S_Geotagged
+13:16:29      S: 1038 images, 1038 with position (632 Fix), 1038 JPG tagged [1:1]
+13:16:29      W: writing geotagged copies -> C:\Priyanshu\MISSION 5_F3\W_Geotagged
+13:17:09      W: 1038 images, 1038 with position (632 Fix), 1038 JPG tagged [1:1]
+13:17:10      X: writing geotagged copies -> C:\Priyanshu\MISSION 5_F3\X_Geotagged
+13:17:52      X: 1038 images, 1038 with position (632 Fix), 1038 JPG tagged [1:1]
+13:17:55      Excel: C:\Priyanshu\MISSION 5_F3\GEOTAG\SEPT2630_Cameras.xlsx
+13:17:55  DONE  MISSION 5_F3  |  events 1038  |  Fix 632 (60.9 %)
+14:09:52  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+16:55:25  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+17:06:56  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+17:55:18  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+12:04:31  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+12:28:28  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+12:52:45  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+13:08:44  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+11:01:02  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+10:49:45  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+11:21:43  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+12:45:34  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+16:46:21  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+10:46:29  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+15:40:53  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+12:36:36  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+15:58:15  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+17:28:41  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
+16:13:42  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Latrics_Suite_Con\latrics_geotag_pipeline.py

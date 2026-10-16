@@ -1,0 +1,19 @@
+{
+  "convertToRinex": "C:\\Program Files (x86)\\Trimble\\convertToRinex.exe",
+  "rnx2rtkp": "",
+  "t04_cmd": "\"{exe}\" \"{t04}\" -p \"{outdir}\" -v 3.05",
+  "use_existing_pos": false,
+  "elev_mask": 15.0,
+  "frequencies": "l1+l2",
+  "navsys": 9,
+  "ar_mode": "fix-and-hold",
+  "ar_ratio": 3.0,
+  "base_extra_up": 0.108,
+  "base_height_override": "",
+  "max_gap_s": 0.5,
+  "write_exif": true,
+  "excel": true,
+  "auto_run": true,
+  "overwrite": true,
+  "watch_dir": "C:\\Priyanshu"
+}

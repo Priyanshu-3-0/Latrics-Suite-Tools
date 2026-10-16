@@ -1,0 +1,32 @@
+{
+ "v": {
+  "outp": "",
+  "blur": "40",
+  "dark": "60",
+  "over": "10",
+  "overmean": "150",
+  "strength": "Normal",
+  "colour": "Rich",
+  "where": "Inside each flight folder  (Enhanced)",
+  "fwd": "80",
+  "need": "60"
+ },
+ "fx": {
+  "fix_dark": true,
+  "fix_over": true,
+  "fix_blur": true,
+  "denoise": true
+ },
+ "sub": true,
+ "copy_good": true,
+ "flights": [
+  "C:\\Priyanshu\\S"
+ ],
+ "fuse": {
+  "D:\\Wapcos_Training\\Raw data\\21_02_2026\\Flight6": true,
+  "D:\\Wapcos_Training\\Raw data\\21_02_2026\\Flight7": true,
+  "D:\\Wapcos_Training\\Raw data\\21_02_2026\\Flight8": true,
+  "C:\\Users\\Latrics\\Downloads\\LATRICS_Enhancer_TestImages\\Flight1": true,
+  "C:\\Users\\Latrics\\Downloads\\LATRICS_Enhancer_TestImages\\Flight2": false
+ }
+}
