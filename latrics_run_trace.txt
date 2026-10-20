@@ -63,3 +63,5 @@ C:\Priyanshu\MISSION 5_F3
 15:58:15  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
 17:28:41  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Single_Code\latrics_geotag_pipeline.py
 16:13:42  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Latrics_Suite_Con\latrics_geotag_pipeline.py
+11:18:05  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=C:\Users\Latrics\Desktop\Automation_Code\Latrics_Suite_Con\latrics_geotag_pipeline.py
+11:33:33  === LATRICS Geotag Pipeline v3.3 started (python 3.14.6) script=c:\Users\Latrics\Desktop\Automation_Code\Latrics_Suite_Con\latrics_geotag_pipeline.py
